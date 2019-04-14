@@ -1,38 +1,68 @@
-# ACME Supermarket
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Create a solution for the ACME Supermarket problem.
+## Available Scripts
 
-## Description of the problem
+In the project directory, you can run:
 
-ACME's quest for global domination has prompted us to open a supermarket – we sell only three products:
+### `npm start`
 
-    Product code        Name            Price
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-    FR1                 Fruit tea       £ 3.11
-    SR1                 Strawberries    £ 5.00
-    CF1                 Coffee          £11.23
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Our CEO is a big fan of buy-one-get-one-free offers and of fruit tea. He wants us to add a rule to do this.
+### `npm test`
 
-The COO, though, likes low prices and wants people buying strawberries to get a price discount for bulk purchases. If you buy 3 or more strawberries, the price should drop to £4.50.
-Our check-out can scan items in any order, and because the CEO and COO change their minds often, it needs to be flexible regarding our pricing rules.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The interface to our basket looks like this (shown in JavaScript):
+### `npm run build`
 
-    var basket = new Basket(pricingRules)
-    basket.add(item)
-    basket.add(item)
-    var price = basket.total()
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Implement a basket system that fulfills these requirements in JavaScript.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-Test Data:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-    Basket: FR1, SR1, FR1, CF1
-    Total price expected: £19.34
+### `npm run eject`
 
-    Basket: FR1, FR1
-    Total price expected: £3.11
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-    Basket: SR1, SR1, FR1, SR1
-    Total price expected: £16.61
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
